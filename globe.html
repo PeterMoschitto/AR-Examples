@@ -38,8 +38,8 @@ function initialize()
 {
 	scene = new THREE.Scene();
 
-	let ambientLight = new THREE.AmbientLight( 0xcccccc, 0.5 );
-	scene.add( ambientLight );
+// 	let ambientLight = new THREE.AmbientLight( 0xcccccc, 0.5 );
+// 	scene.add( ambientLight );
 
 	camera = new THREE.Camera();
 	scene.add(camera);
@@ -49,7 +49,7 @@ function initialize()
 		alpha: true
 	});
 	renderer.setClearColor(new THREE.Color('lightgrey'), 0)
-	renderer.setSize( 640, 480 );
+	renderer.setSize( 840, 680 );
 	renderer.domElement.style.position = 'absolute'
 	renderer.domElement.style.top = '0px'
 	renderer.domElement.style.left = '0px'
@@ -123,17 +123,17 @@ function initialize()
 	
 	markerRoot1.add( mesh1 );
 	
-	let pointLight = new THREE.PointLight( 0xffffff, 1, 100 );
-	pointLight.position.set(0.5,3,2);
-	// create a mesh to help visualize the position of the light
-	pointLight.add( 
-		new THREE.Mesh( 
-			new THREE.SphereBufferGeometry( 0.05, 16,8 ), 
-			new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5 }) 
-		) 
-	);
-	markerRoot1.add( pointLight );
-}
+// 	let pointLight = new THREE.PointLight( 0xffffff, 1, 100 );
+// 	pointLight.position.set(0.5,3,2);
+// 	// create a mesh to help visualize the position of the light
+// 	pointLight.add( 
+// 		new THREE.Mesh( 
+// 			new THREE.SphereBufferGeometry( 0.05, 16,8 ), 
+// 			new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.5 }) 
+// 		) 
+// 	);
+// 	markerRoot1.add( pointLight );
+// }
 
 
 function update()
